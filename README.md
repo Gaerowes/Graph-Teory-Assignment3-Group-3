@@ -18,16 +18,17 @@ Our group implemented three distinct algorithms to find an Eulerian Trail or Eul
 * **Backtracking Algorithm:** A recursive algorithm that constructs an Eulerian trail or circuit by exploring unused edges one at a time. At each step, the algorithm selects an unused edge and continues the traversal. If the selected edge leads to a state where a complete Eulerian trail or circuit cannot be formed, the algorithm backtracks and tries another unused edge. The process continues until all edges have been traversed exactly once.
 ---
 
-## 3. Prerequisites to Run the Code
-* Python 3.x installed on your system.
-* A terminal or command-line interface.
-* No external libraries are required (only Python standard libraries).
-* Install IDE you prefer and run on it.
-
+## 3. Prerequisite to Run the Code
+* **Python 3.x** or **PyPy3** installed on your system (PyPy3 is highly recommended for faster execution to pass time limits on platforms like CSES).
 ---
 
 ## 4. Instructions to Run the Code
-You can run the Python scripts directly from your terminal.
+1. Clone the repository to your local machine.
+2. Navigate to the project directory in your terminal[cite: 2].
+3. Ensure you have the input data saved in a text file (e.g., `input.txt`) or ready to be pasted into the terminal[cite: 2].
+4. Run the desired algorithm script using Python:
+   ```bash
+   python fleury.py < input.txt
 
 ---
 
