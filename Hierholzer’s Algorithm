@@ -1,0 +1,78 @@
+import sys
+
+input = sys.stdin.readline
+
+n, m = map(int, input().split())
+
+# Adjacency list
+# adj[u] = [(neighbor, edge_id), ...]
+adj = [[] for _ in range(n + 1)]
+
+degree = [0] * (n + 1)
+
+for edge_id in range(m):
+    a, b = map(int, input().split())
+
+    adj[a].append((b, edge_id))
+    adj[b].append((a, edge_id))
+
+    degree[a] += 1
+    degree[b] += 1
+
+
+# Every vertex must have an even degree
+# for an Eulerian circuit to exist
+for i in range(1, n + 1):
+    if degree[i] % 2 != 0:
+        print("IMPOSSIBLE")
+        sys.exit()
+
+
+# Track whether each edge has been used
+used = [False] * m
+
+# Pointer for each vertex
+ptr = [0] * (n + 1)
+
+# Stack for Hierholzer's Algorithm
+stack = [1]
+
+# Stores the final circuit
+circuit = []
+
+while stack:
+    u = stack[-1]
+
+    # Skip edges that have already been used
+    while ptr[u] < len(adj[u]) and used[adj[u][ptr[u]][1]]:
+        ptr[u] += 1
+
+    # No unused edge remains
+    if ptr[u] == len(adj[u]):
+        circuit.append(u)
+        stack.pop()
+
+    else:
+        v, edge_id = adj[u][ptr[u]]
+        ptr[u] += 1
+
+        # Use this edge
+        if not used[edge_id]:
+            used[edge_id] = True
+            stack.append(v)
+
+
+# A valid Eulerian circuit must contain m + 1 vertices
+if len(circuit) != m + 1:
+    print("IMPOSSIBLE")
+    sys.exit()
+
+# Hierholzer produces the circuit backwards
+circuit.reverse()
+
+# Must start and end at post office (vertex 1)
+if circuit[0] != 1 or circuit[-1] != 1:
+    print("IMPOSSIBLE")
+    sys.exit()
+
+print(*circuit)
