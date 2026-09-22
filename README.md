@@ -35,6 +35,8 @@ You can run the Python scripts directly from your terminal.
 * Fleury Algorithm
 <img width="439" height="226" alt="image" src="https://github.com/user-attachments/assets/c643744c-dd19-4c14-b883-f8cc7d43d669" />
 <img width="595" height="768" alt="image" src="https://github.com/user-attachments/assets/e167a7a0-9b82-47e2-88c2-d70e4e75babb" />
+
+
 * Hierholzer’s Algorithm
 <img width="426" height="195" alt="WhatsApp Image 2026-09-22 at 21 22 30" src="https://github.com/user-attachments/assets/38fbcd97-9dd7-45ca-93f8-0dbf02a1c299" />
 <img width="621" height="649" alt="WhatsApp Image 2026-09-22 at 21 22 30 (1)" src="https://github.com/user-attachments/assets/6d2592ee-96b7-4f2b-80cf-9fa771aefc37" />
