@@ -32,4 +32,8 @@ You can run the Python scripts directly from your terminal.
 ---
 
 ## 5. Result of Sample Run
+* Hierholzer’s Algorithm
+  <img width="426" height="195" alt="WhatsApp Image 2026-09-22 at 21 22 30" src="https://github.com/user-attachments/assets/38fbcd97-9dd7-45ca-93f8-0dbf02a1c299" />
+<img width="621" height="649" alt="WhatsApp Image 2026-09-22 at 21 22 30 (1)" src="https://github.com/user-attachments/assets/6d2592ee-96b7-4f2b-80cf-9fa771aefc37" />
+
 
