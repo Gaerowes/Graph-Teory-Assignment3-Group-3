@@ -41,7 +41,7 @@ You can run the Python scripts directly from your terminal.
 <img width="426" height="195" alt="WhatsApp Image 2026-09-22 at 21 22 30" src="https://github.com/user-attachments/assets/38fbcd97-9dd7-45ca-93f8-0dbf02a1c299" />
 <img width="621" height="649" alt="WhatsApp Image 2026-09-22 at 21 22 30 (1)" src="https://github.com/user-attachments/assets/6d2592ee-96b7-4f2b-80cf-9fa771aefc37" />
 
-* Hierholzer’s Algorithm
+* Iterative Euler Tour Algorithm
 <img width="916" height="803" alt="Screenshot 2026-09-22 213330" src="https://github.com/user-attachments/assets/e06b4127-3790-4a80-9187-f2834112d4af" />
 <img width="247" height="203" alt="Screenshot 2026-09-22 213459" src="https://github.com/user-attachments/assets/76d325bf-a70a-40b8-8b0e-da0cb06597a7" />
 
